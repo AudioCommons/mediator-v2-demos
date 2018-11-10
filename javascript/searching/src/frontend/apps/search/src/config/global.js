@@ -31,6 +31,8 @@ if (!globalSet.hasOwnProperty('general')) {
     globalSet.general = {
         // RESTfull backend API url
         serverUrl: 'http://127.0.0.1:9005',
+        mediatorUrl: 'http://m2.audiocommons.org/api/audioclips',
+        talkDirectlyToMediator: true,
         // serverUrl: 'https://playsound.colabo.space/api', // colabo-space-1 (https)
         // active map
         mapId: '5b96619b86f3cc8057216a03',
