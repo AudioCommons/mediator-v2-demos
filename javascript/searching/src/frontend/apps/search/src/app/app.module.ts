@@ -22,6 +22,7 @@ import {KnalledgeMapService} from '@colabo-knalledge/f-store_core/knalledge-map.
 // Puzzle modules
 import { RimaAaaModule } from '@colabo-rima/f-aaa';
 import { AudioCommonMediatorModule } from '@audio-commons/mediator-search';
+import { AudioCommonPlayerModule } from '@audio-commons/play-player';
 
 // import {IndexComponent} from './index/index.component';
 
@@ -54,6 +55,7 @@ var moduleImports = [
   // Puzzle modules
   , RimaAaaModule
   , AudioCommonMediatorModule
+  , AudioCommonPlayerModule
 ];
 // moduleImports.push(MainModule);
 

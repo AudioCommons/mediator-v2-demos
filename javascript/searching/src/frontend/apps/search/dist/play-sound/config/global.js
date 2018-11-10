@@ -30,7 +30,7 @@ if (!globalSet.hasOwnProperty('general')) {
     console.log("[config/global.js] Setting up globalSet.general");
     globalSet.general = {
         // RESTfull backend API url
-        serverUrl: 'http://127.0.0.1:9005',
+        serverUrl: 'http://127.0.0.1:8005',
         // serverUrl: 'https://playsound.colabo.space/api', // colabo-space-1 (https)
         // active map
         mapId: '5b96619b86f3cc8057216a03',
