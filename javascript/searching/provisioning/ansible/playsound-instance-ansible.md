@@ -155,9 +155,9 @@ sudo touch /etc/nginx/sites-available/playsound
 sudo joe /etc/nginx/sites-available/playsound
 
 # <START>
-server { 
-  listen 80; 
-  listen [::]:80; 
+server {
+  listen 80;
+  listen [::]:80;
 
   server_name playsound.colabo.space;
 
@@ -261,7 +261,7 @@ cd /var/repos/PlaySound-Colabo.Space/src/backend/apps/play-sound/
 npm start
 
 # test in other tab
-curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:8005/search-sounds/bird
+curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:9005/search-sounds/bird
 
 cd /var/repos/PlaySound-Colabo.Space/src/frontend/apps/PlaySound/
 ng serve -o

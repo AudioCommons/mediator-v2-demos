@@ -24,7 +24,7 @@ ansible --check all -i hosts.yaml -u ansible --private-key ~/.ssh/orchestration-
 
 Each playbook comes with associated variables in the same-name varables file stored in the `variables` folder.
 
-Each playbook can in addition have 
+Each playbook can in addition have
 
 ## Users
 
@@ -214,9 +214,9 @@ ls -al /var/repos/PlaySound-Colabo.Space/src/backend/apps/play-sound/node_module
 
 ```sh
 # from local machine
-curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:8005/search-sounds/bird
+curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:9005/search-sounds/bird
 # from local machine
-curl -v -H "Content-Type: application/json" -X GET http://playsound.colabo.space:8005/search-sounds/bird
+curl -v -H "Content-Type: application/json" -X GET http://playsound.colabo.space:9005/search-sounds/bird
 # from remote machine
 curl -v -H "Content-Type: application/json" -X GET http://playsound.colabo.space/api/search-sounds/bird
 ```

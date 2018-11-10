@@ -1,13 +1,13 @@
 'use strict';
 
-// this is file is imported and exported 
+// this is file is imported and exported
 // to the rest of the system through the puzzle
 // `@colabo-utils/i-config`
 
 // the initializing part of the application
 // like the apps/<app_name>/index.ts in the backend
 // or apps/<app_name>/src/main.ts
-// should (somehow) load it and pass it to 
+// should (somehow) load it and pass it to
 // the init method of the puzzle `@colabo-utils/i-config`
 
 console.log("[config/global.js] Setting up the globalSet variable");
@@ -30,7 +30,7 @@ if (!globalSet.hasOwnProperty('general')) {
     console.log("[config/global.js] Setting up globalSet.general");
     globalSet.general = {
         // RESTfull backend API url
-        serverUrl: 'http://127.0.0.1:8005',
+        serverUrl: 'http://127.0.0.1:9005',
         // serverUrl: 'https://playsound.colabo.space/api', // colabo-space-1 (https)
         // active map
         mapId: '5b96619b86f3cc8057216a03',
@@ -43,7 +43,7 @@ if (!globalSet.hasOwnProperty('puzzles')) {
     globalSet.puzzles = {
         '@colabo-topichat/core': {
             // socketUrl: 'http://localhost/',
-            socketUrl: 'http://localhost:8005/',
+            socketUrl: 'http://localhost:9005/',
             // socketUrl: 'https://playsound.colabo.space/api',
         }
     };
