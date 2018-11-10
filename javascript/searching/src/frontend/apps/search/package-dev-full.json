@@ -1,6 +1,6 @@
 {
     "name": "@audio-commons/demos-f-search",
-    "version": "0.1.3",
+    "version": "0.2.1",
     "description": "Audio Commons - frontend demo of searching with mediator",
     "license": "?",
     "scripts": {
