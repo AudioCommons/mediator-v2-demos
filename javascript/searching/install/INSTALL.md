@@ -52,7 +52,4 @@ npm install -g @colabo/cli
 
 # Code
 
-To install code, you have two modes:
-
-+ **basic** - helps you bootstrapping, easy going. It is simple, straight forward, but you have less limited options of extending PlaySound, Here are [INSTALL-basic](INSTALL-basic.md) instructions.
-+ **full** - this is for a full blown PlaySound development. You should try it after you reach limitations of the basic mode. Here are [INSTALL-full](INSTALL-full.md) instructions.
+Continue with the [INSTALL-basic](INSTALL-basic.md) instructions.
