@@ -1,0 +1,11 @@
+{
+  "services": {
+    "b-playsound": {
+      "description": "PlaySound Backend (node.js)",
+      "service_path": "/var/services",
+      "env": "",
+      "working_dir": "/var/repos/PlaySound-Colabo.Space/src/backend/apps/play-sound/dist/",
+      "exec_start": "/usr/bin/nodejs /var/repos/PlaySound-Colabo.Space/src/backend/apps/play-sound/dist/index.js 8005"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+var puzzles = {
+    name: "b-search",
+    description: "This is a backend aspect of the Audio Commons mediator search demo",
+    sudo: {
+        "offer": false,
+        "install": false,
+        "build": false,
+        "symlinks": false
+    },
+    dependencies: {
+        "@colabo-rima/b-aaa": {},
+        "@colabo-topichat/b-core": {},
+        "@colabo-topichat/b-talk": {},
+        "@colabo-utils/i-config": {},
+        "@audio-commons/mediator-access": {},
+        "@audio-commons/mediator-express": {}
+    },
+    offers: {}
+}
+
+exports.puzzles = puzzles;
