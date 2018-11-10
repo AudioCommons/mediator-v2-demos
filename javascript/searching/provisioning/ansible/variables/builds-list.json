@@ -1,6 +1,0 @@
-{
-    "builds": [{
-        "key": "playsound",
-        "path": "../../../src/frontend/apps/PlaySound"
-    }]
-}
