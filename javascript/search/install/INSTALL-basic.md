@@ -1,5 +1,7 @@
 # Code
 
+***NOTE***: The current version of the demo is set up to work completely ***without backend***, and it accesses the AC mediator directly. Therefore, you do not need to do a backend part of isntallation.
+
 ## Cloning
 
 ```sh
@@ -56,7 +58,41 @@ TBD (To Be Done)
 
 If you are building for the production you need to build frontend in a more efficient way:
 
-```
+```sh
 cd <path_to_the_mediator-v2-demos_repo>/src/frontend/apps/search/
 ng build --prod
+# or with base-ref
+ng build --prod --base-href '/demos/search/'
+```
+
+then in the nginx file you need to setup:
+
+(`sudo joe /etc/nginx/sites-available/ac-mediator`)
+
+```yaml
+
+  # root ...;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+    root ...;
+    default_type 'text/plain';
+    allow all;
+    index index.html;
+    autoindex on;
+  }
+
+  location /demos/ {
+    try_files $uri $uri/ /index.html;
+    root /var/www/demos/;
+    default_type 'text/plain';
+    allow all;
+    index index.html;
+    autoindex on;
+  }
+```
+
+```sh
+sudo nginx -t
+sudo systemctl restart nginx
 ```

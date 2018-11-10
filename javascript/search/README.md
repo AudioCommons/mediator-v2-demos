@@ -6,4 +6,6 @@ It is implemented as Angular v6 app in the frontend, and node.js app in the back
 
 Read further under [INSTALL.md](install/INSTALL.md) for more details on installation.
 
+You can check the [LIVE demo here](http://m2.audiocommons.org/demos/search)
+
 ![Search-Demo](https://raw.githubusercontent.com/AudioCommons/mediator-v2-demos/master/javascript/searching/docs/images/search-example.png)
