@@ -24,7 +24,7 @@ npm start
 
 # then test in other terminal's tab
 # you should get search results back, and backend should not crash ;)
-curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:8005/search-sounds/bird
+curl -v -H "Content-Type: application/json" -X GET http://127.0.0.1:9005/search-sounds/bird
 ```
 
 ## Frontend
